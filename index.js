@@ -40,7 +40,7 @@ module.exports = {
 
     /**
     indexで与えられた選択肢の配列から、点数を計算する
-    具体的には 与えられた配列の "0" の数を数える
+    点数表から質問ごとの点数を算出して計算
 
     @method calculate
     @param {Array(Number)} answerIndexes 選んだ選択肢のインデックスの配列(質問順)
