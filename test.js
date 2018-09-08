@@ -25,6 +25,14 @@ console.assert(FTND.getChoices(3).length === 4);
 console.assert(FTND.getChoices(4).length === 2);
 console.assert(FTND.getChoices(5).length === 2);
 
+// getScore
+//[2,1,0,3,1,0]
+console.assert(FTND.getScore(0,0) === 3);
+console.assert(FTND.getScore(1,0) === 1);
+console.assert(FTND.getScore(2,0) === 1);
+console.assert(FTND.getScore(3,0) === 0);
+console.assert(FTND.getScore(4,0) === 1);
+console.assert(FTND.getScore(5,0) === 1);
 
 // calculate
 console.assert(FTND.calculate([0,0,0,0,0,0]) === 7);

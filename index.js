@@ -1,4 +1,4 @@
-module.exports = {
+var FTND = {
 
     /**
     質問一覧を返す
@@ -16,7 +16,27 @@ module.exports = {
             'あなたは、目覚めてから2、3時間以内のほうがその後の時間帯よりも頻繁にタバコを吸いますか。',
             'あなたは、病気でほとんど一日中寝ている時でも、タバコを吸いますか。'
         ];
-   },
+    },
+
+    /**
+    qsIndexに相当する質問に対してanswerIndexと答えたときに、どういう点数になるのか。
+    @method getScore
+    @param {Array(Number)} answerIndex 選んだ選択肢のインデックスの配列(質問順)
+    @return {Number} 点数
+    */
+    getScore: function(qsIndex, answerIndex) {
+
+        var points = [
+            [3, 2, 1, 0],
+            [1, 0],
+            [1, 0],
+            [0, 1, 2, 3],
+            [1, 0],
+            [1, 0]
+        ];
+
+        return points[qsIndex][answerIndex];
+    },
 
     /**
     indexで与えられた質問の選択肢を返す
@@ -52,18 +72,9 @@ module.exports = {
             throw new Error('引数の長さが6でない');
         }
 
-        var points = [
-            [3, 2, 1, 0],
-            [1, 0],
-            [1, 0],
-            [0, 1, 2, 3],
-            [1, 0],
-            [1, 0]
-        ];
+        return answerIndexes.reduce(function(total, answerIndexes, qsIndex) {
 
-        return answerIndexes.reduce(function(total, qsIndex, i) {
-
-            var point = points[i][qsIndex];
+            var point = FTND.getScore(qsIndex, answerIndexes);
 
             if (point === undefined) {
                 throw new Error((i + 1) + '番目の値が不正');
@@ -75,3 +86,4 @@ module.exports = {
     }
 };
 
+module.exports = FTND
