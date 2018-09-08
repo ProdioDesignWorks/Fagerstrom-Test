@@ -1,6 +1,6 @@
 {
   "name": "ftnd-test-ja",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FTND (Fagerstrom Test for Nicotine Dependence) in Japanese",
   "main": "index.js",
   "scripts": {
