@@ -1,29 +1,34 @@
 {
-  "name": "ftnd-test-ja",
-  "version": "1.0.1",
-  "description": "FTND (Fagerstrom Test for Nicotine Dependence) in Japanese",
-  "main": "index.js",
+  "name": "fagerstrom-test",
+  "version": "1.0.0",
+  "description": "FTND (Fagerstrom Test for Nicotine Dependence) questionnaire wording and score calculation",
+  "main": "src/index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node tests/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CureApp/ftnd-test-ja.git"
+    "url": "https://github.com/ProdioDesignWorks/Fagerstrom-Test.git"
   },
   "bugs": {
-    "url": "https://github.com/CureApp/ftnd-test-ja/issues"
+    "url": "https://github.com/ProdioDesignWorks/Fagerstrom-Test/issues"
   },
-  "homepage": "https://github.com/CureApp/ftnd-test-ja",
+  "homepage": "https://github.com/ProdioDesignWorks/Fagerstrom-Test",
+    "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
   "keywords": [
-    "Japanese",
     "FTND",
     "tobacco",
     "medical",
     "nicotine dependence",
     "Fagerstrom",
-    "smoking"
+    "smoking",
+    "nicotine test",
+    "fagerstrom score"
   ],
-  "author": "CureApp, Inc.",
+  "author": "Pawan Wagh <pawan@prodio.in>",
   "license": "MIT",
   "dependencies": {
   },
