@@ -4,7 +4,7 @@ FTND (Fagerstrom Test for Nicotine Dependence) questionnaire wording and score c
 ## install
 
 ```sh
-npm install ftnd-test-ja
+npm install fagerstrom-test --save
 ```
 
 ## usage
