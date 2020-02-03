@@ -1,28 +1,28 @@
 // http://ndri.curtin.edu.au/btitp/documents/Fagerstrom_test.pdf
 
 const questions = [
-    'How many minutes after you wake up in the morning do you smoke the first cigarette?',
-    'Do you find it difficult to smoke at places where smoking is prohibited, such as libraries and cinemas?',
-    'In what time of the day do you have the most patience to quit smoking?',
-    'How many cigarettes do you smoke a day',
-    'Do you smoke more often within a few hours of waking up than during later hours?',
-    'Do you smoke even when you are sick and sleep almost all day long?'
+    'How many packets of tobacco do you consume everyday?',
+    'How much do you spend on tobacco a day?',
+    'How soon after waking up do you consume tobacco?',
+    'When do you consume a higher proportion of tobacco?',
+    'Do you consume tobacco even when you are seriously ill?',
+    'Do you find it difficult to refrain from smoking in public places?'
 ];
 
 const choices = [
-	['Within 5 minutes', '6-30 minutes', '31-60 minutes', 'after 61 minutes'],
-	['Yes, No'],
-	['Awakening when waking up in the morning', 'Others'],
-	['10 or fewer', '11-20', '21-30', '31 or more'],
+	['10 or less', '11 ‐ 20', '21 ‐ 30','31 or more'],
+	['100 or less', '101 - 200', '201 - 300', '301 or more']
+	['within 5 minutes', '6-30 minutes', '31-60 minutes', 'After 60 minutes']
+	['Day', 'Night']
 	['Yes', 'No'],
 	['Yes', 'No']
 ]
 
 const points = [
+    [0, 1, 2, 3],
+    [0, 1, 2, 3],
     [3, 2, 1, 0],
     [1, 0],
-    [1, 0],
-    [0, 1, 2, 3],
     [1, 0],
     [1, 0]
 ];

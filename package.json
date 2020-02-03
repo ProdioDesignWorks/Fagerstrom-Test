@@ -1,6 +1,6 @@
 {
   "name": "fagerstrom-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FTND (Fagerstrom Test for Nicotine Dependence) questionnaire wording and score calculation",
   "main": "src/index.js",
   "scripts": {
